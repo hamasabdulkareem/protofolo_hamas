@@ -1,0 +1,387 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "font/Al-Kharashi 58 Naskh.ttf";
+}
+[class*="col-"]{
+    box-sizing: border-box;
+    float:right;
+
+}
+
+.row::after{
+    content: "";
+    clear:both;
+    display: table;
+}
+
+
+[class*="col-"]{
+    width:100%;
+}
+
+
+
+.block{
+    border:3px solid green;
+    height: 300px;
+    width:200px;
+}
+
+
+@media (min-width:600px){
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+}
+
+@media (min-width:768px){
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+}
+
+@media (min-width:992px){
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
+
+@media (min-width:1200px){
+    .col-xlg-1 {width: 8.33%;}
+    .col-xlg-2 {width: 16.66%;}
+    .col-xlg-3 {width: 25%;}
+    .col-xlg-4 {width: 33.33%;}
+    .col-xlg-5 {width: 41.66%;}
+    .col-xlg-6 {width: 50%;}
+    .col-xlg-7 {width: 58.33%;}
+    .col-xlg-8 {width: 66.66%;}
+    .col-xlg-9 {width: 75%;}
+    .col-xlg-10 {width: 83.33%;}
+    .col-xlg-11 {width: 91.66%;}
+    .col-xlg-12 {width: 100%;}
+}
+ul{
+    list-style-type: none;
+    margin-top:35px;
+    margin-bottom: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+li{
+    display : inline;
+
+    padding: 15px;
+
+}
+li a{
+
+    border-radius: 3px;
+    border-color: #ccc;
+    text-decoration:none;
+    color:#fff
+}
+.he{
+    height: 100%;
+    width: 100%;
+
+    background-image: url('images/photography-336608_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: 86em;
+
+
+}
+.second-lyer{
+position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .8;
+}
+img{
+    width: 110;
+    height: 90;
+
+}
+.img{
+    text-align: left;
+
+}
+.head-text{
+
+    position: absolute;
+      color: #fff;
+      font-size:15px;
+      top:45vh;
+
+  }
+  h2,h3{
+      text-align: center;
+
+  }
+  h2{
+      direction: ltr;
+    font-family: 'Indie Flower', cursive;
+
+  }
+  h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .social ul{
+    margin-top: 75vh;
+
+}
+.social li{
+    display :block
+}
+.social li img{
+    width: 20px;
+    height: 20px;
+}
+.languge ul{
+    margin-top: 65vh;
+
+}
+.languge li{
+
+        display :block;
+        text-align: center;
+
+}
+  p{
+      direction: ltr;
+  }
+
+.pa{
+    width: 100%;
+    height: 35%;
+    background-color: #FFFFFF;
+}
+.pa p{
+
+    margin-top: 70px;
+    text-align: center;
+}
+.works {
+
+
+}
+.row works {
+   margin: 100px;
+}
+
+.flip-card {
+    width: 25%;
+    height: 15em;
+     text-align: center;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+
+  color: black;
+}
+.flip-card-front img{
+    margin-top: 80px;
+}
+.flip-card-back {
+ background-color: #76CC97;
+  color: white;
+  transform: rotateY(180deg);
+
+}
+.flip-card-back h1{
+    text-align: center;
+}
+.html{
+  background-color: #E6E7E9;
+}
+.css{
+    background-color: #536579;
+}
+.php{
+    background-color: #FFF1D6;
+}
+
+.javascript{
+    background-color: #E45252;
+}
+.c{
+    background-color: #98D295;
+}
+.csh{
+    background-color: #282E3A;
+}
+.esp{
+    background-color: #FEE1B5;
+}
+.python{
+    background-color: #25B9E1;
+}
+.html2{
+  background-color: #A6A9B0;
+}
+.css2{
+    background-color: #AAB7C5;
+}
+.php2{
+    background-color: #FFD88A;
+}
+
+.javascript2{
+    background-color: #F7CACA;
+}
+.c2{
+    background-color: #AFDCAD;
+}
+.csh2{
+    background-color: #8D98B0;
+}
+.esp2{
+    background-color: #FCB54A;
+}
+.python2{
+    background-color: #9CDFF2;
+}
+
+.hier-me{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    background-color: #FAFAFA;
+    padding-top:90px;
+}
+.hier-me input{
+    padding: 12px 20px;
+    background-color: #48C393;
+    color: #E7F3EF;
+}
+
+    input{
+      border: none;
+    }
+
+.formcontact div input, label, textarea {
+    display: block;
+    margin-bottom: 2%;
+}
+textarea {
+    width:100%;
+    font-size:17px;
+    font-weight:bold;
+    height:130px;
+    text-align:left;
+    border-style:hidden;
+    border-radius:5px;
+    color:#b5aeae;
+}
+.contact{
+height: 100vh;
+max-height: 100vh;
+position: relative;
+background-color: #F5F5F5;
+
+}
+h1{
+    text-align: left;
+    margin-left: 2%;
+    color: #596685;
+
+}
+.contact p{
+    text-align: left;
+    margin-left: 2%;
+    color: #8489B9;
+}
+label{
+     color: #60708F;
+
+}
+
+.first-name input, .last-name input {
+    text-align: left;
+    width: 100%;
+    height: 40px;
+}
+.email input {
+    text-align: left;
+    width: 100%;
+    height: 40px;
+}
+form{
+    text-align: left;
+    margin: 2%;
+}
+.formcontact{
+    width: 95%;
+    padding: 2%;
+}
+.formcontact .first-name {
+    float: left;
+    width: 40%;
+}
+label {
+    cursor: default;
+}
+
+
+#submit{
+ float: left;
+ padding: 12px 60px;
+ background-color: #299BE4;
+ color: #FAFAFB;
+
+}
+
+
+
